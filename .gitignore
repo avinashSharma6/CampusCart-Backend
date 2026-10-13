@@ -1,0 +1,33 @@
+# Maven build output
+target/
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Runtime logs and uploaded content
+*.log
+logs/
+uploads/
+
+# Local-only configuration
+application-local.properties
+
+# Local database backups
+*_backup.sql
+*.sql.gz
+*.dump
+*.bak
+*.backup
+*.old
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+.DS_Store
+Thumbs.db
