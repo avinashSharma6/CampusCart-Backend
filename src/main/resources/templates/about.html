@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About | CampusCart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<main class="container py-5 flex-grow-1">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <span class="badge text-bg-warning mb-3">About us</span>
+
+            <h1 class="display-5 fw-bold mb-4">
+                Making campus life a little easier.
+            </h1>
+
+            <p class="lead text-secondary mb-4">
+                CampusCart is a student-focused marketplace designed to help
+                university students buy and sell useful items within their campus community.
+            </p>
+
+            <div class="row g-3 my-3">
+                <div class="col-12">
+                    <section class="card border shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h2 class="h4 fw-bold mb-3">What can you find?</h2>
+                            <p class="text-secondary mb-0">
+                                Textbooks, calculators, electronics, lab equipment,
+                                stationery, hostel essentials, sports equipment, bags,
+                                and other everyday student necessities.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12">
+                    <section class="card border shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h2 class="h4 fw-bold mb-3">Built around student needs</h2>
+                            <p class="text-secondary mb-0">
+                                Students can publish listings, explore items by category,
+                                search for products, and contact sellers to arrange a transaction.
+                                The goal is to make it easier to find useful second-hand items
+                                while helping unwanted items find a new home.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12">
+                    <section class="card border shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h2 class="h4 fw-bold mb-3">Shop thoughtfully</h2>
+                            <p class="text-secondary mb-0">
+                                Listings are provided by their sellers. Review item descriptions
+                                carefully, ask questions before meeting, and inspect an item before
+                                paying. Read our marketplace rules for additional safety guidance.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-primary" th:href="@{/listings}">
+                    Explore marketplace
+                </a>
+                <a class="btn btn-outline-secondary"
+                   th:href="@{/marketplace-rules}">
+                    Read marketplace rules
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
