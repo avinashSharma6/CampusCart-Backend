@@ -16,4 +16,4 @@ COPY --from=build /app/target/campuscart-1.0.0.jar app.jar
 
 EXPOSE 10000
 
-ENTRYPOINT ["java", "-Dserver.port=${PORT:10000}", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
